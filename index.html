@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex">
   <title>ZetaBé</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@800&family=Mulish:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&display=swap">
   <style>
     :root { --tinta: #111; --papel: #f1efea; --acento: #ffc629; --suave: #6b6a65; }
     * { box-sizing: border-box; }
@@ -14,9 +14,9 @@
     body { background: var(--tinta); color: #fff; font: 16px/1.5 Mulish, system-ui, sans-serif;
            display: grid; place-items: center; padding: 24px; }
     main { width: min(560px, 100%); }
-    /* Logo: mientras llega el archivo oficial, el nombre en texto. */
-    .logo { font: 800 clamp(64px, 16vw, 120px)/0.9 "Sofia Sans Extra Condensed", sans-serif; letter-spacing: 0.01em; margin: 0; }
-    .logo span { color: var(--acento); }
+    /* Logo de ZetaBé (versión para fondo negro, PNG con transparencia). */
+    .logo { margin: 0; line-height: 0; }
+    .logo img { display: block; width: min(360px, 100%); height: auto; }
     p { color: #cfcdc6; margin: 18px 0 30px; max-width: 34ch; }
     /* Entrar a OASIS: el logo de OASIS (fondo amarillo) es el botón. */
     a.entrar { display: inline-block; text-decoration: none; color: #fff; }
@@ -29,7 +29,7 @@
 </head>
 <body>
   <main>
-    <h1 class="logo">ZETABÉ<span>.</span></h1>
+    <h1 class="logo"><img src="zetabe-logo.png" width="900" height="403" alt="ZetaBé"></h1>
     <p>Herramientas internas del equipo ZetaBé.</p>
     <a class="entrar" href="OASIS/">
       <img src="oasis-logo.png" width="705" height="226" alt="OASIS">
