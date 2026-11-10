@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>ZetaBé</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@800&family=Mulish:wght@400;600&display=swap">
+  <style>
+    :root { --tinta: #111; --papel: #f1efea; --acento: #ffc629; --suave: #6b6a65; }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body { background: var(--tinta); color: #fff; font: 16px/1.5 Mulish, system-ui, sans-serif;
+           display: grid; place-items: center; padding: 24px; }
+    main { width: min(560px, 100%); }
+    /* Logo: mientras llega el archivo oficial, el nombre en texto. */
+    .logo { font: 800 clamp(64px, 16vw, 120px)/0.9 "Sofia Sans Extra Condensed", sans-serif; letter-spacing: 0.01em; margin: 0; }
+    .logo span { color: var(--acento); }
+    p { color: #cfcdc6; margin: 18px 0 30px; max-width: 34ch; }
+    /* Entrar a OASIS: el logo de OASIS (fondo amarillo) es el botón. */
+    a.entrar { display: inline-block; text-decoration: none; color: #fff; }
+    a.entrar img { display: block; width: min(320px, 100%); height: auto; border: 2px solid transparent; transition: border-color .15s; }
+    a.entrar span { display: block; margin-top: 10px; font-weight: 600; font-size: 14px; }
+    a.entrar:hover img, a.entrar:focus-visible img { border-color: #fff; }
+    a.entrar:focus-visible { outline: none; }
+    footer { margin-top: 56px; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--suave); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="logo">ZETABÉ<span>.</span></h1>
+    <p>Herramientas internas del equipo ZetaBé.</p>
+    <a class="entrar" href="OASIS/">
+      <img src="oasis-logo.png" width="705" height="226" alt="OASIS">
+      <span>Entrar a OASIS &rarr;</span>
+    </a>
+    <footer>zetabe.agency</footer>
+  </main>
+</body>
+</html>
